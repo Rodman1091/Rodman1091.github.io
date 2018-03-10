@@ -1,0 +1,43 @@
+header{
+    background: #dad612;
+    height: 200px;
+}
+.content{
+    background-color: #000000;
+    margin:0;
+}
+footer{
+background: rgb(22, 170, 207);
+height: 200px; 
+clear: both;
+}
+#lol{
+    height:600px;
+    background-color: #27f565;
+    width:40%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    float:left;
+    position:static;
+}
+#love{
+    height:600px;
+    background-color: #eda03b;
+    width:60%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    float:left;
+}
+body{
+    margin:0;
+}
+h1{
+    margin:0;
+    padding:50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content #lol  img{
+    margin:25%;
+}
