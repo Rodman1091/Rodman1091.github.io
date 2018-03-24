@@ -13,10 +13,40 @@
         nav.navbar{
             padding-left: 50px;
             padding-right: 60px;
-            font-family:Verdana, Geneva, Tahoma, sans-serif
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
-        #navbarNav{
-            
+        #rebound{
+          width:100%;
+          
+        }  
+        #head{
+         margin-left:auto;
+         margin-right:auto;
+         margin-top:50px;
+         display:block;
+         border-radius:100px;
+         width:200px;
+         height:200px;
+        }
+        #garnet{
+          margin-left:auto;
+         margin-right:auto;
+         margin-top:50px;
+         display:block;
+         width:200px;
+         height:200px;
+        border-radius:100px;
+        }
+        #bodin{
+          margin-left:auto;
+         margin-right:auto;
+         margin-top:50px;
+         display:block;
+         border-radius:100px;
+        }
+        #bellytiz{
+          margin-right:auto;
+          margin-left:auto;
         }
     </style>
   </head>
@@ -35,22 +65,50 @@
         </div>
         </ul>
         </nav> -->
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">Rodman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">About</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+              <ul class="navbar-nav ml-auto" >
+               <li><a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a></li>
+                <li><a class="nav-item nav-link" href="#">About</a></li>
+                <li><a class="nav-item nav-link" href="#">Contact</a></li>
                
-              </div>
+              </ul>
             </div>
           </nav>
     </header>
-
+    <div> <img src="omg/rebound.jpg" alt="Rodman" id="rebound"></div>
+   <div class="row">
+    <div class="col">
+    <img src="img/Head.jpg" alt="Rodman" id="head">
+    </div>
+    <div class="col">
+      <img src="img/garnet.jpg" id="garnet">
+      </div>
+      <div class="col">
+      <img src="img/BD.png" id="bodin">
+        </div>
+        </div>
+        <div id="bellytiz" class="row">
+         <form>
+           <div class="form-group">
+           <label for="nameForm">name</label>
+           <input type="text" class="form-control" id="nameForm">
+           </div>
+           <div class="form-group">
+            <label for="emailForm">email</label>
+            <input type="email" class="form-control" id="emailForm">
+            </div>
+            <div class="form-group">
+              <label for="mesForm">message</label>
+              <textarea type="text" class="form-control" id="mesForm" rows="4"></textarea>
+              </div>
+         </form>
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
