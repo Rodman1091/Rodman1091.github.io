@@ -48,6 +48,9 @@
           margin-right:auto;
           margin-left:auto;
         }
+        .bell{
+          text-align:center;
+        }
     </style>
   </head>
   <body>
@@ -81,18 +84,42 @@
             </div>
           </nav>
     </header>
-    <div> <img src="omg/Rebound.jpg" alt="Rodman" id="rebound"></div>
+    <div> 
+      <img src="omg/Rebound.jpg" alt="Rodman" id="rebound">
+    </div>
    <div class="row">
     <div class="col">
     <img src="img/Head.jpg" alt="Rodman" id="head">
+    <p class="bell">
+        My name is Zeta.
+        </p>
+        <p class="bell">
+            I am 13 years old.
+        </p>
+        <p class="bell">
+          I am single.
+        </p>
     </div>
     <div class="col">
       <img src="img/garnet.jpg" id="garnet">
+      <p class="bell">
+        I like to play ROV.
+      </p>
+      <p class="bell">
+        I play basketball.
+      </p> 
       </div>
       <div class="col">
       <img src="img/BD.png" id="bodin">
+        <p class="bell">
+          I learn in BD school.
+        </p>
+        <p class="bell">
+          I am in class 2/1.
+                </p>
         </div>
         </div>
+        <div class="container">
         <div id="bellytiz" class="row">
          <form>
            <div class="form-group">
@@ -106,13 +133,47 @@
             <div class="form-group">
               <label for="mesForm">message</label>
               <textarea type="text" class="form-control" id="mesForm" rows="4"></textarea>
+              <button id="BUTTon">Submit!</button>
+
               </div>
          </form>
+        </div>
+        </div>
+        <div>
+          <p>
+            Love you all :D
+          </p>
         </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+     $(function(){
+       $('#BUTTon').click(function(event){
+         event.preventDefault();
+
+         var name =  document.getElementById("nameForm").value;
+         var email = document.getElementById("emailForm").value
+         var msg = document.getElementById("mesForm").value
+         
+         if(name==''){
+           alert('Please fill out your name in the form.')
+         }
+         else if(email==''){
+           alert('Please fill out your email in the form.')
+         }
+         else if(msg==''){
+           alert('Please fill out your monosodiumglutamate in the form.')
+         }
+         else{
+           alert("Hi " + name + "\n" + email + "\n" + "Your message has been sent.");
+         }
+        //  console.log(name);
+         
+       })
+     })
+    </script>
   </body>
 </html>
