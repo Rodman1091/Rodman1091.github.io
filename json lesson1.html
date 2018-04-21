@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+    <style>
+    .unique{
+        background:pink;
+    }
+    .bigcola{
+        height:200px;
+        width:300px;
+    }
+    .rodwoman{
+        display:none;
+    }
+    </style>
+    </head>
+    <body>
+        <div id="nck">
+        <h1>My new world.</h1>
+        </div>
+        <div>
+            <button id="bell" >
+                click!It will be larger!!
+            </button>
+            <div id="rodwoman" class="rodwoman"><img src="img/rodwoman.jpg" alt="rodwoman"></div>
+        </div>
+        <script src="./js/jquery-3.3.1.min.js">
+        
+        </script>
+        <script>
+        $("#bell").click(function(){
+        //alert("Go away!!!!!!!!!!!!")  
+        
+        $("#nck").addClass("unique");
+        $("#bell").addClass("unique bigcola");
+        $("#rodwoman").removeClass("rodwoman")
+        });
+        </script>
+    </body>
+</html>
