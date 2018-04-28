@@ -22,15 +22,24 @@
             <button id="bell" >
                 click!It will be larger!!
             </button>
+            <button id="luv">
+                My profile
+            </button>
+            <button id="lol">
+            lol
+            </button>
+            
             <div id="rodwoman" class="rodwoman"><img src="img/rodwoman.jpg" alt="rodwoman"></div>
+            <div id="noidinthisid">
+
+            </div>
         </div>
         <script src="./js/jquery-3.3.1.min.js">
         
         </script>
         <script>
         $("#bell").click(function(){
-        //alert("Go away!!!!!!!!!!!!")  
-        
+        alert("Go away!!!!!!!!!!!!")  
         $("#nck").addClass("unique");
         $("#bell").addClass("unique bigcola");
         $("#rodwoman").removeClass("rodwoman")
@@ -38,18 +47,35 @@
         </script>
         <script>
         //json
-        var student1 = {
+        var student = {
             name : "Zeta",
             age : "13 years old",
             status : "Single",
             hobby : "playing games",
-            most_fav_subject : "social studies",
-            least_fav_subject : "science",
+            most_fav_sub : "social studies",
+            least_fav_sub : "science",
             height : "167 cm",
             weight : "66 kg",
             best_friend : "Mark(A gay)",
             fav_food : "larb"
         }
+        $("#luv").click(function(){
+         // document.write(student.name);
+        //   alert("Hi.My name is " + student.name + ".");
+                                       
+        });
+        $("#lol").click(function(){
+        $("#noidinthisid").append("Hi.My name is " + student.name + ".");
+        $("#noidinthisid").append("I am " + student.age + ".");
+        $("#noidinthisid").append("I am " + student.status + ".");
+        $("#noidinthisid").append("My hobby is " + student.hobby + ".")
+        $("#noidinthisid").append("My most favorite subject is " + student.most_fav_sub + ".")
+        $("#noidinthisid").append("My least favorite subject is " + student.least_fav_sub + ".")
+        $("#noidinthisid").append("My height is " + student.height + ".")
+        $("#noidinthisid").append("My weight is " + student.weight + ".")
+        $("#noidinthisid").append("My best friend is " + student.best_friend + ".")
+        $("#noidinthisid").append("My favorite food is " + student.fav_food + ".")    
+        });
         </script>
 
     </body>
